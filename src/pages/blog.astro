@@ -1,5 +1,6 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const pageTitle = "Blog";
 ---
@@ -14,7 +15,7 @@ const pageTitle = "Blog";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <Navigation/>
+        <Header/>
         
         <h1>{pageTitle}</h1>
         <h2>This section is WIP</h2>
@@ -28,5 +29,9 @@ const pageTitle = "Blog";
         <p>You will find my thoughts and learning here.</p>
       
         <p>Soon I will write about my 6 month journey to Argentina.</p>
+        <Footer />
+        <script>
+          import "../scripts/menu.js"
+        </script>
       </body>
 </html>
